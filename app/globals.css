@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  @apply bg-slate-950 text-slate-100 min-h-screen;
+  font-family: var(--font-sans);
+}
+
+a {
+  @apply text-emerald-400 hover:text-emerald-300 transition-colors;
+}
+
+.card {
+  @apply rounded-xl border border-slate-800 bg-slate-900/60 p-6 shadow-lg shadow-slate-950/50 backdrop-blur;
+}
+
+.input {
+  @apply w-full rounded-lg border border-slate-800 bg-slate-950/50 px-4 py-2 text-slate-100 placeholder:text-slate-500 focus:border-emerald-400 focus:outline-none;
+}
+
+.label {
+  @apply text-sm font-semibold uppercase tracking-wide text-slate-400;
+}
+
+.button-primary {
+  @apply inline-flex items-center justify-center rounded-lg bg-emerald-500 px-4 py-2 text-sm font-semibold text-slate-950 transition hover:bg-emerald-400 disabled:cursor-not-allowed disabled:opacity-60;
+}
+
+.badge {
+  @apply inline-flex items-center rounded-full border border-slate-800 bg-slate-900/80 px-3 py-1 text-xs font-medium uppercase tracking-wide text-slate-400;
+}
